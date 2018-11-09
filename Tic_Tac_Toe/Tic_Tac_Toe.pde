@@ -83,15 +83,14 @@ void setup() {
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM| BASELINE]
    textFont(levelFont, 49); //change the number until it fits, largest font size
    
+   //button for box 1
+   if(mouseX>width*1/24 && mouseX<width*4/24 && mouseY>height*3/24 && mouseY<height*11/24 && (mouseButton ==RIGHT)) {
+     fill(0);
+     textFont(xoFont, 69);
+     text("X", width*1/24, height*7/24, width*3/24, height*4/24);
+     fill(255);
+   }
+   
   
   
-}
-
-void keyPressed() { 
-  
-  if (key==CODED) {
-    if (keyCode == 7){
-     ellipse(width*1/25, height*7/24, width*1/6, height*1/6);
-    }
-  }
 }
